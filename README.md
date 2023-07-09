@@ -60,8 +60,6 @@ or
 ```bash
 docker-compose ps
 ```
-![Screenshot docker containers list](https://www.hizliresim.com/2tyb2d4)
-*Screenshot with running containers*
 
 ## Explore Rest API's
 
