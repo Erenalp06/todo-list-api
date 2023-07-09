@@ -61,6 +61,10 @@ or
 docker-compose ps
 ```
 
+![Screenshot docker containers list](/docker_containers.png)
+*Screenshot with runnings containers*
+
+
 ## Explore Rest API's
 
 The app defines following CRUP APIs.
