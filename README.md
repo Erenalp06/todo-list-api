@@ -4,11 +4,21 @@ Build Restful CRUD API for a todo list using Spring Boot.
 
 ## Steps to Setup
 
-**1. Clone the application**
+**1. Docker. First, you need to install docker**
 
+* Download Docker [Here](https://docs.docker.com/docker-for-windows/install/). Hint: Enable Hyper-V feature on Windows and restart.
+* Then open powershell and check:
+
+docker version
 ```bash
-git clone https://github.com/Erenalp06/todo-list-api.git
+docker -v
 ```
+
+or docker compose version
+```bash
+docker-compose -v
+```
+
 **2. Create PostgreSQL database**
 ```bash
 create database todo_db
@@ -19,11 +29,39 @@ create database todo_db
 + open `src/main/resources/application.properties`
 + change `spring.datasource.username` and `spring.datasource.password` as per your postgreSQL installation
 
-**4. Run the app using maven**
+**4. Spring Boot app**
+* Clone the repository
 ```bash
-mvn spring-boot:run
+git clone https://github.com/Erenalp06/todo-list-api.git
 ```
+* Build the maven project:
+```bash
+mvn clean install
+```
+* Running the containers:
+
+This command will build the docker containers and start them.
+```bash
+docker-compose up
+```
+
 The app will start running at <http:localhost:9643>
+
+Appendix A.
+
+All commands should be run from project root (where docker-compose.yml locates)
+
+* If you have to want to see running containers.
+Checklist docker containers
+```bash
+docker container list -a
+```
+or
+```bash
+docker-compose ps
+```
+![Screenshot docker containers list](https://www.hizliresim.com/2tyb2d4)
+*Screenshot with running containers*
 
 ## Explore Rest API's
 
