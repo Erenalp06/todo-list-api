@@ -34,7 +34,7 @@ The app defines following CRUP APIs.
 | Method | Url | Description | Sample Valid Request Body |
 | ------ | --- | ----------- | ------------------------- |
 | GET    | /v1/users/{userId} | Get user by userId with task list | |
-| POST   | /v1/users | Create new user | |
+| POST   | /v1/users | Create new user | [JSON](#usercreate) |
 | PUT    | /v1/users/{userId} | Update user | |
 | DELETE | /v1/users/{userId} | Delete user by userId | |
 
@@ -43,7 +43,7 @@ The app defines following CRUP APIs.
 | Method | Url | Description | Sample Valid Request Body |
 | ------ | --- | ----------- | ------------------------- |
 | GET    | /v1/tasks/{userId} | Get tasks by userId | |
-| POST   | /v1/tasks/{userId} | Create new task by userId | |
+| POST   | /v1/tasks/{userId} | Create new task by userId | [JSON](#taskcreate) |
 | PUT    | /v1/tasks/{taskId} | Update task | |
 | DELETE | /v1/tasks/{taskId} | Delete user by taskId | |
 
